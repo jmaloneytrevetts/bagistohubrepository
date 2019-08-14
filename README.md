@@ -1,6 +1,7 @@
 ##Installation
 
 `$ composer require jmaloneytrevetts/bagistohubexport`
+`$ composer require laravel/slack-notification-channel`
 
 `$ composer dump-autoload`
 
