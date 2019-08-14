@@ -47,6 +47,9 @@ class OrderHub extends Model
         }
     }
 
+    public static function testSlack(){
+        Notification::route('slack',env('SLACK_HOOK'))->notify(new SlackNotification(true, 'Slack Test Completed.  If you are seeing this, slack integration is working.'));
+    }
     
 
     private static function hasBeenExported($order_id)

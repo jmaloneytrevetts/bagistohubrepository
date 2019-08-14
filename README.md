@@ -26,3 +26,4 @@ SLACK_HOOK  | SLACK_HOOK=https://hooks.slack.com/services/abc123
 Key  | Example Value
 ------------- | -------------
 hub:export  | [orderID optional parameter]
+hub:slacktest  | *tests slack integration with test message
