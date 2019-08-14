@@ -1,4 +1,4 @@
-##Installation
+## Installation
 
 `$ composer require jmaloneytrevetts/bagistohubexport`
 `$ composer require laravel/slack-notification-channel`
@@ -11,7 +11,7 @@ In config/app.php add under providers:
 Other dependencies:
 `composer require laravel/slack-notification-channel`
 
-###.env
+### .env
 
 Key  | Example Value
 ------------- | -------------
@@ -20,7 +20,7 @@ HUB_API_KEY  | ”abcdefg123”
 HUB_SHIP_METHOD_ID  | 2 [Look up equivalent id in hub tblshippingmethods]
 SLACK_HOOK  | SLACK_HOOK=https://hooks.slack.com/services/abc123
 
-###Artisan Commands
+### Artisan Commands
 
 Key  | Example Value
 ------------- | -------------
