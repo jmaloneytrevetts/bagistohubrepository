@@ -12,7 +12,8 @@ class BagistoHubExportServiceProvider extends ServiceProvider
      * @return void
      */
     protected $commands = [
-        'jmaloneytrevetts\bagistohubexport\HubExportCommand'
+        'jmaloneytrevetts\bagistohubexport\HubExportCommand',
+        'jmaloneytrevetts\bagistohubexport\SlackTestCommand',
     ];
 
 
