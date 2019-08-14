@@ -1,0 +1,26 @@
+{
+    "name": "jmaloney/bagistohubexport",
+    "description": "Export bagisto orders to hub",
+    "authors": [
+        {
+            "name": "Jess Maloney",
+            "email": "jmaloney@trevetts.com"
+        }
+    ],
+    "require": {
+        "laravelcollective/html": "^5.5"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "jmaloneytrevetts\\bagistohubexport\\BagistoHubExportServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "jmaloneytrevetts\\bagistohubexport\\": "src/"
+        }
+    }
+}

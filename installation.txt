@@ -1,0 +1,18 @@
+composer install
+composer dump-autoload
+in config/app.php add under providers:
+jmaloneytrevetts\bagistohubexport\BagistoHubExportServiceProvider::class
+
+Other dependencies:
+composer require laravel/slack-notification-channel
+
+In order to create the relation between store products and hub products, products must have an attribute with code 'hubItemID'
+
+.env
+HUB_ADDRESS=”http://hub2.domain.com
+HUB_API_KEY=”abcdefg” 
+HUB_SHIP_METHOD_ID=2 //or whatever in hub tblshippingmethods
+SLACK_HOOK=https://hooks.slack.com/services/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
+
+Artisan commands:
+hub:export [order_id optional]
